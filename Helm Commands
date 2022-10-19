@@ -1,0 +1,7 @@
+
+
+
+helm install apache bitnam/apache -namespace=web
+helm upgrade apache bitnam/apache -namespace=web
+helm rollback apache 1  -namespace=web
+helm uninstall apache bitnam/apache -namespace=web
